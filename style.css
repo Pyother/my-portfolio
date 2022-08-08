@@ -1,0 +1,16 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    width: 100%;
+    display: grid;
+}
+
+.page-body {
+    position: relative;
+    height: 2000px;
+    background-color:aqua;
+}
