@@ -7,33 +7,119 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Rubik+Dirt&display=swap" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet"> 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
         <style>
-            .bg-1 {
-                background-image: linear-gradient(to left, grey, black);
-                height: 100vh;
-            }
-            .bg-2 {
-                background-image: linear-gradient(to left, grey, black);
-                height: 100vh;
-            }
-            .multicolortext {
-                font-family: 'Rubik Dirt', cursive;
+            .multicolortext-1 {
+                font-family: 'Raleway', sans-serif;
                 font-size: 48px;
-                background-image: linear-gradient(to left, azure, yellowgreen);
+                background-image: linear-gradient(to left, azure, deepskyblue);
                 -webkit-background-clip: text;
                 -moz-background-clip: text;
                 background-clip: text;
                 color: transparent;
+                letter-spacing: 5px;
             }
+            .multicolortext-2 {
+                font-family: 'Raleway', sans-serif;
+                font-size: 32px;
+                background-image: linear-gradient(to left, azure, deepskyblue);
+                -webkit-background-clip: text;
+                -moz-background-clip: text;
+                background-clip: text;
+                color: transparent;
+                letter-spacing: 5px;
+            }
+            .bg-1 {
+                background-image: linear-gradient(to left, rgb(0, 28, 53), black);
+                height: 93vh;
+                width: 100%;
+                display: grid;
+                align-items: center;
+                justify-content: center;
+            }
+            .bg-1 {
+                background-image: linear-gradient(to left, rgb(0, 28, 53), black);
+                height: 100vh;
+                width: 100%;
+                display: grid;
+                align-items: center;
+                justify-content: center;
+            }
+            .navbar {
+                font-family: 'Raleway', sans-serif;
+                font-size: 12px;
+                height: 7px;
+                margin-bottom: 0;
+                border-color: black;
+                letter-spacing: 5px;
+            }
+            .navbar-nav li a:hover {
+                color: deepskyblue !important;
+            }
+            .nav.navbar-nav.navbar-right li a {
+                color: azure !important;
+            }
+            p {
+                font-family: 'Raleway', sans-serif;
+                font-size: 12px;
+                color: azure;
+                letter-spacing: 3px;
+            }
+            .text {
+                display: inline-block;
+            }
+
         </style>
     </head>
     
     <body>
+
+
+        <nav class="navbar navbar-default" style="background-color: #000000;">
+        
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#">DEVELOPMENT</a></li>
+                        <li><a href="#">BUSINESS COOPERATION</a></li>
+                        <li><a href="#">ATHLETICS</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
         <div class="container-fluid bg-1 text-center">
-            <h1>Piotr Sobol</h1>
+            <span class="multicolortext-1">
+                PIOTR SOBOL
+                <p>Just a young developer with some crazy ideas.</p>
+            </span>
+        </div>
+
+        <div class="container-fluid bg-1 text-center">
+            <span class="multicolortext-2">
+                DEVELOPMENT
+            </span>
+        </div>
+
+        <div class="container-fluid bg-1 text-center">
+            <span class="multicolortext-2">
+                BUSINESS COOPERATION
+            </span>
+        </div>
+
+        <div class="container-fluid bg-1 text-center">
+            <span class="multicolortext-2">
+                ATHLETICS
+            </span>
         </div>
     </body>
 </html>
