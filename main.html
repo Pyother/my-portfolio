@@ -49,17 +49,27 @@
             }
             .bg-3 {
                 color: azure;
-                height: 70vh;
+                height: 10vh;
+                padding-left: 50px;
+                padding-right: 50px;
                 display: grid;
-                padding-left: 300px;
-                padding-right: 300px;
                 align-items: center;
                 justify-content: center;
                 border-style: solid;
                 border-width: 1px;
-                animation-name: border-animation;
-                animation-duration: 10s;
-                animation-iteration-count: infinite;
+                border-color: transparent;
+                border-radius: 10px;
+                font-family: 'Raleway', sans-serif;
+                font-size: 12px;
+                letter-spacing: 3px;
+                transition: border-color 0.5s linear;
+                transition: box-shadow 0.5s linear;
+                box-shadow: rgba(240, 255, 255, 0.2) 0px 1px 15px rgba(240, 255, 255, 0.2) 0px 1px 15px;
+            }
+            .bg-3:hover {
+                border-color: azure;
+                transition: border-color 0.5s linear;
+                box-shadow: rgba(240, 255, 255, 0.2) 0px 1px 20px rgba(240, 255, 255, 0.2) 0px 1px 20px;
             }
             .navbar {
                 font-family: 'Raleway', sans-serif;
@@ -105,13 +115,6 @@
                 0%   {color: black;}
                 100% {color: azure;}
             }
-            @keyframes border-animation {
-                0% {border-color: azure;}
-                25% {border-color: deepskyblue}
-                50% {border-color: rgb(0, 28, 53)}
-                75% {border-color: black}
-                100% {border-color: azure}
-            }
 
         </style>
     </head>
@@ -145,27 +148,38 @@
         </div>
 
         <div id="sectionDevelopment" class="container-fluid bg-2 text-center">
-            <div class="container-fluid bg-3 text-center">
-                <span class="multicolortext-2">
-                    DEVELOPMENT
-                </span>
+            
+            <span class="multicolortext-2">
+                DEVELOPMENT
+            </span>
+            <p>
+                FRONT-END & PYTHON developer.<br>Currently, application designer in PGE EC.
+            </p>
+            <div class="col">
+                <div class="col-sm-6 col-md-6 col-lg-6 bg-3">
+                    PORTFOLIO
+                </div>
+                <div class="col-sm-6 col-md-6 col-lg-6 bg-3">
+                    PROJECTS
+                </div>
             </div>
+
         </div>
 
         <div id="sectionBusiness" class="container-fluid bg-2 text-center">
-            <div class="container-fluid bg-3 text-center">
-                <span class="multicolortext-2">
-                    BUSINESS COOPERATION
-                </span>
-            </div>
+            
+            <span class="multicolortext-2">
+                BUSINESS COOPERATION
+            </span>
+
         </div>
 
         <div id="sectionAthletics" class="container-fluid bg-2 text-center">
-            <div class="container-fluid bg-3 text-center">
-                <span class="multicolortext-2">
-                    ATHLETICS
-                </span>
-            </div>
+    
+            <span class="multicolortext-2">
+                ATHLETICS
+            </span>
+
         </div>
     </body>
 </html>
